@@ -43,8 +43,8 @@ $ Asking for name...
 function askPass() {
 	// when user puts name and press enter
 	if (uname.value == '' || uname.value == null || uname.value == 'undefined') {
-		// if nothing is input, make name "BUDDY"..
-		uname.value = 'Buddy';
+		// if nothing is input, make name "student"..
+		uname.value = 'student';
 		localStorage.setItem('name', uname.value); // place this name in local storage
 		tempName = localStorage.getItem('name'); // get the name from local storage and put in a variable
 	} else {
@@ -72,7 +72,7 @@ function typing() {
 
 function chkPass(btn) {
 	// checking password
-	if (pass.value == 11223344) {
+	if (pass.value == SPA) {
 		// if password is correct
 		pass.setAttribute('disabled', 'disabled'); // make input box disabled - just for good UX
 		submitBtn.setAttribute('disabled', 'disabled'); // make input box disabled - again just for good UX
